@@ -3,220 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memora</title>
+    <title>IP-Project</title>
+    
+    <!--slider stylesheet-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav>
-    <img src="logo.png" style="max-height: 50px;" alt="logo">
-    <h1>Memora</h1>
-    <ul>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Contact Us</li>
-    </ul>
-
-    <div>
-        
-    <button class="login">login</button>
-    <button class="sign-up">Sign Up</button>
-    </div>
-
-</nav>
-<div class="hero">
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque quae exercitationem architecto sunt id eaque quam voluptatum nobis! Natus!
-
-    </h1>
-    <select name="Location" id="">
-        <option value="London">London</option>
-        <option value="Mumbai">Mumbai</option>
-        <option value="Pune">Pune</option>
-        <option value="Nagpur">Nagpur</option>
-        
-    </select>
-
-    <select name="Category" id="">
-        <option value="Wedding">Wedding</option>
-        <option value="Birthday">Birthday</option>
-        <option value="Funeral">Funeral</option>
-        <option value="Conference">Conference</option>
-        
-    </select>
-    <button class="submit">
-        Submit
-    </button>
-</div>
-<div class="about-us">
-    <h1>About Us</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis ea, earum, quod voluptatum, exercitationem blanditiis provident fugit illo pariatur quos fugiat dicta cumque quas sint optio porro adipisci expedita? Sunt.</p>
-    <button id="explore-more">Explore More</button>
-</div>
-<div class="services">
-    <div class="container">
-        <div class="box">
-            <img src="" alt="">
-        </div>
-        <div class="box">
-            <img src="" alt="">
-        </div>
-        <div class="box">
-            <img src="" alt="">
-        </div>
-        <div class="box">
-            <img src="" alt="">
-        </div>
-        <div class="box">
-            <img src="" alt="">
-        </div>
-        <div class="box">
-            <img src="" alt="">
-        </div>
-        <div class="box">
-            <img src="" alt="">
-        </div>
-        <div class="box">
-            <img src="" alt="">
-        </div>
-        <div class="box">
-            <img src="" alt="">
-        </div>
-    </div>
     
-</div>
-<footer>
-    <div>
-        <h1>Contact Us</h1>
-        <li>Email</li>
-        <li>Contact Address</li>
-        <li>Contact No</li>
-    </div>
-</footer>
+    <header class="header">
+        <a href="#" class="logo">Memora</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#service">service</a>
+            <a href="#about">about</a>
+            <a href="#gallery">gallery</a>
+            <a href="#price">price</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+
+        </nav>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+
+    <!-- home section starts-->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>its time to celebrate! the best <span>event  organizers </span></h3>
+            <a href="#" class="btn">contact us</a>
+        </div>
+
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slide-1.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--custom js link-->
+    <script src="js/script.js"></script>
 </body>
-<style>
-/* General Styling */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Navigation Styling */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
-    color: white;
-    padding: 10px 20px;
-}
-
-nav h1 {
-    margin: 0;
-    font-size: 1.5rem;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    margin-right: 20px;
-}
-
-nav li:last-child {
-    margin-right: 0;
-}
-
-/* Button Styling */
-button {
-    color: blue;
-    background: whitesmoke;
-    height: 2rem;
-    width: 100px;
-    font-family: sans-serif;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: grey;
-}
-
-/* Hero Section Styling */
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(155, 27, 180);
-    height: 100vh;
-    color: white;
-    text-align: center;
-}
-
-.hero select {
-    margin: 10px 0;
-    padding: 5px;
-}
-
-.hero button {
-    margin-top: 20px;
-}
-
-/* About Us Section Styling */
-.about-us {
-    background-color: blue;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-.about-us p {
-    margin-bottom: 20px;
-}
-
-.about-us button {
-    background-color: black;
-    color: beige;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.about-us button:hover {
-    background-color: grey;
-}
-
-/* Services Section Styling */
-.services {
-    background-color: #f4f4f4;
-    padding: 20px;
-    text-align: center;
-}
-
-.container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-}
-
-.box {
-    flex: 0 0 auto;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    margin-right: 20px;
-    scroll-snap-align: start;
-}
-
-/* Footer Styling */
-footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-</style>
 </html>
